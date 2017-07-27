@@ -1,0 +1,22 @@
+.letterlobster {
+	font-family: 'Lobster', cursive;
+	text-align: center;
+}
+
+.letterpacifico {
+	font-family: 'Pacifico', cursive;
+	text-align: center;
+	text-transform: capitalize;
+}
+
+.jumbotron {
+	background-image: url("https://media.giphy.com/media/imRxnF1urBv8c/giphy.gif");
+	background-size: contain;
+	background-repeat: no-repeat;
+    background-position: left;
+    background-color: transparent;
+}
+
+.jumbotron h1 {
+	color: blue;
+}

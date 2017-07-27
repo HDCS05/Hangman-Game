@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>The Hangman Game</title>
+
+		<!-- Viewport -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+		<!-- special google fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico" rel="stylesheet">
+
+		<!-- Custom files -->
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	</head>
+
+	<body>
+
+		<audio id="playb" src="assets/sounds/button.mp3" autobuffer></audio>
+		<audio id="playw" src="assets/sounds/bell.mp3" autobuffer></audio>
+		<audio id="playl" src="assets/sounds/fail1.mp3" autobuffer></audio>
+		<audio id="playf" src="assets/sounds/fail2.mp3" autobuffer></audio>
+
+
+		<div class="panel panel-info">
+			<div class="panel-heading">
+				<h3 class="panel-title text-center">Press any letter to play</h3>
+			</div>
+			<div class="panel-body">
+				
+				<div class="jumbotron">
+					<h1 class="letterlobster">The Hangman Game - US States Capitals</h1>
+					<br />
+					<p class="text-center text-info">Guess what US State Capital I'm thinking of</p>
+					<br />
+					<br />
+					<span class="text-primary">
+						<h1 class="letterpacifico">
+							<span id="user-text"></span>
+						</h1>
+					</span>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-7">
+					<button class="btn btn-success btn-lg" type="button">
+						Wins <span class="badge"><span id="dwins"></span></span>
+					</button>
+				<!--</div>
+				<div class="col-md-1">-->
+					<button class="btn btn-danger btn-lg" type="button">
+						Losses <span class="badge"><span id="dlosses"></span></span>
+					</button>
+				<!--</div>
+				<div class="col-md-2">-->
+					<button class="btn btn-warning btn-lg" type="button">
+						Guesses Left <span class="badge"><span id="dgamesleft"></span></span>
+					</button><span id="vwins"></span>
+				<!--</div>
+				<div class="col-md-3">-->
+					<button class="btn btn-info btn-lg" type="button">
+						Letters Already Used
+					</button>
+				<!--</div>
+				<div class="col-md-3">-->
+					<button class="btn btn-info btn-lg" type="button">
+						<span id="dletterplay"></span>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<br />
+		<div class="panel-footer text-center">Copyright &copy; 2017 Hilton DCS</div>
+
+		<!-- Call the Javascript code -->
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
+
+	</body>
+
+</html>
